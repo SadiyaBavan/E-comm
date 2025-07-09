@@ -1,0 +1,67 @@
+@font-face {
+    font-family:'Marcellus' ;
+    src: url('../src/assets/fonts/Marcellus/Marcellus-Regular.ttf');
+    font-weight: 100, 900;
+}
+@font-face {
+    font-family: 'Jost';
+    src: url('../src/assets/fonts/Jost/Jost-VariableFont_wght.ttf');
+    font-weight: 100b, 900;
+}
+:root{
+    --bg-color-1:#DA7B67;
+    --bg-color-2:#F3E9E9;
+    --color-white:#ffffff;
+    --span-color:#7f7f7f;
+}
+body{
+    font-family: 'Marcellus' !important;
+    background-color: var(--bg-color-2) !important;
+}
+span{
+    color: var(--span-color);
+}
+.banner-title{
+  height: 220px;
+  background-color: var(--bg-color-1) !important;
+}
+.form-card{
+  background-color: var(--color-white);
+  width: 335px;
+  height:355px ;
+  position: absolute;
+  top: 150px;
+  border-radius: 30px;
+}
+form{
+    font-family: 'Jost'!important;
+}
+.banner-position{
+    position: relative;
+}
+.box-card{
+    display: flex;
+    justify-content: center;
+}
+input{
+    border: 1px solid #D2D2D2;
+}
+.sign-up-btn{
+    background-color: var(--bg-color-1) !important;
+    border: none;
+    border-radius: 40px;
+    width: 300px;
+}
+/* .right-arrow{
+} */
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'jost';
+  src: url('../public/fonts/Jost/Jost-VariableFont_wght.ttf');
+  font-weight: 100b, 900;
+}
+
+@font-face {
+  font-family: 'marcellus';
+  src: url('../public/fonts/Marcellus/Marcellus-Regular.ttf');
+  font-weight: 100, 900;
+}
+
+:root {
+  --black: #000000;
+  --span-color: #7f7f7f --gray-dark: #666666;
+  --gray-light: #D2D2D2;
+  --white: #FFFFFF;
+  --peach-dark: #DA7B67;
+  --peach: #E78A8A;
+  --peach-light: #F3E9E9;
+  --red: #FF1A1A;
+  --green: #16985E;
+  --orange: #FFA048;
+}
+
+body {
+  font-family: 'Marcellus' !important;
+  background-color: var(--peach-light) !important;
+}
+
+/* login css */
+span {
+  color: var(--span-color);
+}
+
+.banner-title {
+  height: 220px;
+  background-color: var(--peach-dark) !important;
+}
+
+.form-card {
+  background-color: var(--white);
+  width: 335px;
+  height: 355px;
+  position: absolute;
+  top: 150px;
+  border-radius: 30px;
+}
+
+form {
+  font-family: 'Jost' !important;
+}
+
+.banner-position {
+  position: relative;
+}
+
+.box-card {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  border: 1px solid #D2D2D2;
+  /* color: var(--gray-light); */
+}
+
+.sign-up-btn {
+  background-color: var(--peach-dark) !important;
+  height: 55px;
+  width: 215px;
+  border-radius: 30px;
+
+}
+ .circle-btn {
+  width: "50px";
+  height: "50px";
+  color: var(--white)!important;
+  border-radius: "50%" !important;
+  background-color: "#fff";
+  border: "2px solid";
+  border-color: var(--peach-dark);
+  
+} 
