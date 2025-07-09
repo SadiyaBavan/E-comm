@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa6'
 
-const Btn = ({ children, variant = "primary", type = "Button", }) => {
+const Btn = ({ children, variant = "primary", type = "Button", isIconShow = true }) => {
 
 
   const baseStyle = "p-[2px] !rounded-full transition duration-200 cursor-pointer";
@@ -21,9 +21,9 @@ const Btn = ({ children, variant = "primary", type = "Button", }) => {
 
     <div>
       <button type={type} className={baseStyle + " " + variants[variant] + " flex justify-center items-center"}>
-        <span className="w-[52px] h-[52px] bg-white text-orange rounded-full flex justify-center items-center">
+        {isIconShow && <span className="w-[52px] h-[52px] bg-white text-orange rounded-full flex justify-center items-center">
           <FaArrowRight size={18} />
-        </span>
+        </span>}
         <span className="pl-[39px] pr-[73px] text-[18px]">{children}</span>
       </button>
 
